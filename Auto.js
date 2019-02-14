@@ -15,6 +15,14 @@ export default class Auto {
         this._color = color.toUpperCase(); // Lectura
     }
 
+    set modelo(modelo) {
+        if (modelo = 2000) {
+            this._modelo = 2000;
+        } else {
+            this._modelo = modelo;
+        }
+    }
+
     mostrarEstado() {
         console.log(`El auto ${this._marca} ${this._color} del año ${this._modelo} tiene un kilometraje de ${this._kilometraje} y esta ${this._estado}`);
     }
@@ -25,7 +33,7 @@ export default class Auto {
     }
 
     apagar() {
-        this._estado = "Apagar";
+        this._estado = "Apagado";
         this.mostrarEstado();
     }
 
